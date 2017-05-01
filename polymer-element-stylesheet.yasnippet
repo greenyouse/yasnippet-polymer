@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: polymer element, external styles
+# key: pes
+# --
+<dom-module id="$1">
+      <template>
+        <style include="$1"></style>
+        $2
+      </template>
+      <script>
+        Polymer({
+          is: '$1'
+        });
+      </script>
+    </dom-module>

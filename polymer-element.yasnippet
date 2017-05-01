@@ -1,0 +1,19 @@
+# -*- mode: snippet -*-
+# name: polymer element
+# key: pe
+# --
+<dom-module id="$1">
+      <template>
+        <style>
+          :host {
+            display: block;
+          }
+        </style>
+        $2
+      </template>
+      <script>
+        Polymer({
+          is: '$1'
+        });
+      </script>
+    </dom-module>
